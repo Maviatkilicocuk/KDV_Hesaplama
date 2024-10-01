@@ -1,0 +1,22 @@
+package Giris;
+import java.util.Scanner;
+public class KDV_Hesap {
+    public static void main(String[] args) {
+
+        double para_degeri, kdv_para_degeri, KDV;
+
+        KDV = 18.0/100.0;
+            Scanner input = new Scanner(System.in);
+
+                System.out.print(" Ödenen miktarı giriniz : ");
+
+                para_degeri = input.nextInt();
+                kdv_para_degeri = para_degeri + (para_degeri * KDV);
+
+                System.out.println(" KDV'siz fiyat = " + para_degeri);
+                System.out.println(" KDV'li fiyat = " + kdv_para_degeri );
+                System.out.println(" KDV miktarı = " + para_degeri*KDV );
+
+
+    }
+}
